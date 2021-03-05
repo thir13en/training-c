@@ -1,5 +1,3 @@
 # Index
 
-### Strings
-* `'` -> character literal
-* `"` -> string literal
+1. [Basics](basics.md)
