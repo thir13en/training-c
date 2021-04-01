@@ -11,7 +11,7 @@ When the operating system calls a C program, it is going to look for the `main` 
 \n // new line character
 ```
 
-### Basic cheatsheet
+### Output to terminal
 ```c
 // Print string value
 printf("Message\n");
@@ -26,3 +26,19 @@ printf("The content of id is %d\n", id);
 printf("The content of id is %d, age = %d\n", id, age);
 ```
 You can check the code corresponding to the different `format identifiers` in [C data types](https://en.wikipedia.org/wiki/C_data_types)
+
+### Input from terminal
+```c
+#include <stdio.h>
+
+int main() {
+	int age;
+
+	printf("What is your age?\n");
+	// This will read from the input
+	// scanf cannot access the age variable but can understand that we are sending an address where
+	// the value is stored to read from
+	scanf("%d", &age);
+
+	return 0;
+}
